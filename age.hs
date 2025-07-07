@@ -11,14 +11,15 @@ getInput = do
   putStrLn "Please enter your birth year or\ntype QUIT to exit"
   inputStr <- getLine
 
-  let lowerCaseString = stringToLower inputStr
-  if lowerCaseString == "quit"
-    then putStrLn "Exiting..." >> exitSuccess
-    else case readMaybe inputStr :: Maybe Int of -- Attempt to read an Int, resulting in Maybe Int.
-      Nothing -> do
+  case readMaybe inputStr :: Maybe Int of -- Attempt to read an Int, resulting in Maybe Int.
+    Nothing -> do
+      let lowerCaseString = stringToLower inputStr
+      if lowerCaseString == "quit"
+      then putStrLn "Exiting..." >> exitSuccess
+      else do
         putStrLn "Invalid input.  Please try again."
         getInput -- Recursive call to restart the input process.
-      Just val -> return val -- Return the valid value within the IO monad.
+    Just val -> return val -- Return the valid value within the IO monad.
 
 main :: IO () -- Declare the type of main as an IO action returning unit
 main = do
