@@ -1,8 +1,6 @@
--- Import readMaybe for safe parsing
-
 import Data.Char (toLower)
-import System.Exit
-import Text.Read (readMaybe)
+import System.Exit -- Success or Failure exit.
+import Text.Read (readMaybe) -- Safe parsing
 
 stringToLower :: String -> String
 stringToLower str = map toLower str
