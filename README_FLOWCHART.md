@@ -61,10 +61,10 @@ When you modify the algorithm in `age.hs`, also update the embedded Mermaid diag
 
 ## Benefits of This Semi-Automatic Approach:
 
-- **Single Source of Truth**: The diagram lives with the code
-- **Automatic Updates**: No manual copying between files
-- **Version Control**: Diagram changes are tracked with code changes
-- **Consistency**: Diagram stays in sync with code modifications
+- **✅ Single Source of Truth**: The diagram lives with the code
+- **✅ Automatic Updates**: No manual copying between files
+- **✅ Version Control**: Diagram changes are tracked with code changes
+- **✅ Consistency**: Diagram stays in sync with code modifications
 
 ## Limitations
 
