@@ -1,6 +1,6 @@
-# Semi-Automatic Flowchart Update System
+# Automation Flowchart Update System
 
-This setup allows you to semi-automatically update the Mermaid flowchart in `README.md` whenever you modify the algorithm in `age.hs`.
+This setup allows for the automation update of the Mermaid flowchart in `README.md` whenever the modification of the algorithm in `age.hs` takes place.
 
 ## How It Works
 
@@ -51,20 +51,25 @@ pip install watchdog
 
 ## Maintaining the Diagram
 
-When you modify the algorithm in `age.hs`, also update the embedded Mermaid diagram in the comments. The automation will handle updating `README.md`.
+When the algorithm in `age.hs` is modified, also update the embedded Mermaid diagram in the comments. The automation will handle updating `README.md`.
 
 ### Example workflow:
-1. Edit `age.hs` - modify both code and embedded diagram
+1. Edit `age.hs` - modify both code and embedded diagram to match new algorithm
 2. Save the file
 3. If using a watcher, `README.md` updates automatically
 4. If not, run `./update_flowchart.sh` or `make`
 
-## Benefits of This Semi-Automatic Approach:
+## Benefits of the Semi-Automatic Approach:
 
 - **✅ Single Source of Truth**: The diagram lives with the code
 - **✅ Automatic Updates**: No manual copying between files
 - **✅ Version Control**: Diagram changes are tracked with code changes
-- **✅ Consistency**: Diagram stays in sync with code modifications
+- **✅ Consistency**: Diagram stays in sync with code modifications 
+***
+```
+The system, as currently constructed, gives users multiple ways to implement automation based on their preferences and environment.
+```
+***
 
 ## Limitations
 
