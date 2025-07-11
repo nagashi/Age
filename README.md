@@ -1,6 +1,6 @@
 # Age Calculator Algorithm
 
-This flowchart represents the algorithm implemented in `age.hs`.
+The following flowchart represents the algorithm implemented in `age.hs`:
 
 ```mermaid
 graph TD
